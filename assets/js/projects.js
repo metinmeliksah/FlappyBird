@@ -26,7 +26,7 @@ window.project = {
 		"images/images1.png"
 	],
 	youtubeId: "",
-	docs: [ { label: "Proje README", href: "FlappyBird/README.md" } ],
-	download: "FlappyBird/bin/Debug/app.publish/FlappyBird.exe",
+	// docs kaldırıldı
+	download: "dosyalar/FlappyBird.exe",
 
 };
