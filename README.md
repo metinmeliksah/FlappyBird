@@ -1,66 +1,66 @@
-# ?? Flappy Bird - C# Windows Forms Oyunu
+# Flappy Bird - C# Windows Forms Oyunu
 
-Bu proje, klasik Flappy Bird oyununun C# Windows Forms kullanýlarak geliþtirilmiþ tam özellikli bir versiyonudur. Oyun, orijinal Flappy Bird deneyimini korurken, ek özellikler ve Türkçe dil desteði ile geliþtirilmiþtir.
+Bu proje, klasik Flappy Bird oyununun C# Windows Forms kullanÄ±larak geliÅŸtirilmiÅŸ tam Ã¶zellikli bir versiyonudur. Oyun, orijinal Flappy Bird deneyimini korurken, ek Ã¶zellikler ve TÃ¼rkÃ§e dil desteÄŸi ile geliÅŸtirilmiÅŸtir.
 
-## ?? Ýçindekiler
-- [Özellikler](#özellikler)
-- [Teknolojiler](#teknolojiler)
-- [Kurulum](#kurulum)
-- [Oynanýþ](#oynanýþ)
-- [Proje Yapýsý](#proje-yapýsý)
-- [Geliþtirme Süreci](#geliþtirme-süreci)
-- [Teknik Detaylar](#teknik-detaylar)
-- [Katkýda Bulunma](#katkýda-bulunma)
+## Ä°Ã§indekiler
+ - [Ã–zellikler](#Ã¶zellikler)
+ - [Teknolojiler](#teknolojiler)
+ - [Kurulum](#kurulum)
+ - [OynanÄ±ÅŸ](#oynanÄ±ÅŸ)
+ - [Proje YapÄ±sÄ±](#proje-yapÄ±sÄ±)
+ - [GeliÅŸtirme SÃ¼reci](#geliÅŸtirme-sÃ¼reci)
+ - [Teknik Detaylar](#teknik-detaylar)
+ - [KatkÄ±da Bulunma](#katkÄ±da-bulunma)
 
-## ?? Özellikler
+## Ã–zellikler
 
-### ? Oyun Mekaniði
-- **Fizik Tabanlý Hareket**: Gerçekçi gravity ve zýplama mekaniði
-- **Yumuþak Kontroller**: Responsive ve kullanýcý dostu kontrol sistemi
-- **Çoklu Boru Sistemi**: Dinamik olarak oluþturulan 3 çift boru
-- **Akýllý Zorluk**: Skor arttýkça artan oyun hýzý
-- **Çarpýþma Efektleri**: Görsel ve iþitsel feedback sistemi
+### Oyun MekaniÄŸi
+- **Fizik TabanlÄ± Hareket**: GerÃ§ekÃ§i gravity ve zÄ±plama mekaniÄŸi
+- **YumuÅŸak Kontroller**: Responsive ve kullanÄ±cÄ± dostu kontrol sistemi
+- **Ã‡oklu Boru Sistemi**: Dinamik olarak oluÅŸturulan 3 Ã§ift boru
+- **AkÄ±llÄ± Zorluk**: Skor arttÄ±kÃ§a artan oyun hÄ±zÄ±
+- **Ã‡arpÄ±ÅŸma Efektleri**: GÃ¶rsel ve iÅŸitsel feedback sistemi
 
-### ?? Görsel Özellikler
-- **Kuþ Animasyonu**: Kanat çýrpma animasyonu
-- **Çarpýþma Efektleri**: Titreme ve renk deðiþimi
-- **Temiz UI**: Modern ve anlaþýlýr kullanýcý arayüzü
-- **Türkçe Dil Desteði**: Tam Türkçe oyun metinleri
+### GÃ¶rsel Ã–zellikler
+- **KuÅŸ Animasyonu**: Kanat Ã§Ä±rpma animasyonu
+- **Ã‡arpÄ±ÅŸma Efektleri**: Titreme ve renk deÄŸiÅŸimi
+- **Temiz UI**: Modern ve anlaÅŸÄ±lÄ±r kullanÄ±cÄ± arayÃ¼zÃ¼
+- **TÃ¼rkÃ§e Dil DesteÄŸi**: Tam TÃ¼rkÃ§e oyun metinleri
 
-### ?? Teknik Özellikler
-- **Sabit Pencere Boyutu**: Yeniden boyutlandýrma korumasý
-- **Optimized Performance**: 20ms timer ile smooth gameplay
-- **Memory Efficient**: Dinamik nesne yönetimi
-- **Exception Handling**: Hata korumalý ses sistemi
+### Teknik Ã–zellikler
+- **Sabit Pencere Boyutu**: Yeniden boyutlandÄ±rma korumasÄ±
+- **Optimized Performance**: 20ms timer ile akÄ±cÄ± oynanÄ±ÅŸ
+- **Memory Efficient**: Dinamik nesne yÃ¶netimi
+- **Exception Handling**: Hata korumalÄ± ses sistemi
 
-## ??? Teknolojiler
+## Teknolojiler
 
 ### Ana Framework
-- **.NET Framework 4.7.2**: Ana geliþtirme framework'ü
-- **Windows Forms**: GUI framework'ü
+- **.NET Framework 4.7.2**: Ana geliï¿½tirme framework'ï¿½
+- **Windows Forms**: GUI framework'ï¿½
 - **C# 7.3**: Programlama dili
 
-### Kullanýlan Sýnýflar ve Bileþenler
+### Kullanï¿½lan Sï¿½nï¿½flar ve Bileï¿½enler
 ```csharp
-// Ana Sýnýflar
+// Ana Sï¿½nï¿½flar
 - Form (Ana oyun penceresi)
-- PictureBox (Kuþ ve boru görselleri)
-- Timer (Oyun döngüsü ve animasyonlar)
+- PictureBox (Kuï¿½ ve boru gï¿½rselleri)
+- Timer (Oyun dï¿½ngï¿½sï¿½ ve animasyonlar)
 - Label (Skor ve talimatlar)
 
 // Koleksiyonlar
-- List<PictureBox> (Dinamik boru yönetimi)
-- Rectangle (Çarpýþma kontrolü)
+- List<PictureBox> (Dinamik boru yï¿½netimi)
+- Rectangle (ï¿½arpï¿½ï¿½ma kontrolï¿½)
 
 // Grafik ve Medya
-- System.Drawing (Görsel iþlemler)
+- System.Drawing (Gï¿½rsel iï¿½lemler)
 - System.Media.SystemSounds (Ses efektleri)
-- Resources (Oyun varlýklarý)
+- Resources (Oyun varlï¿½klarï¿½)
 ```
 
-### Oyun Döngüsü Bileþenleri
-- **gameTimer**: Ana oyun döngüsü (20ms interval)
-- **Flying_timer1**: Kuþ animasyonu (200ms interval)
+### Oyun Dï¿½ngï¿½sï¿½ Bileï¿½enleri
+- **gameTimer**: Ana oyun dï¿½ngï¿½sï¿½ (20ms interval)
+- **Flying_timer1**: Kuï¿½ animasyonu (200ms interval)
 - **KeyDown Events**: Keyboard input handling
 - **Mouse Click Events**: Mouse input handling
 
@@ -68,130 +68,130 @@ Bu proje, klasik Flappy Bird oyununun C# Windows Forms kullanýlarak geliþtirilmi
 
 ### Gereksinimler
 - Windows 10/11
-- .NET Framework 4.7.2 veya üzeri
-- Visual Studio 2019/2022 (geliþtirme için)
+- .NET Framework 4.7.2 veya ï¿½zeri
+- Visual Studio 2019/2022 (geliï¿½tirme iï¿½in)
 
-### Kurulum Adýmlarý
-1. **Projeyi Ýndirin**
+### Kurulum Adï¿½mlarï¿½
+1. **Projeyi ï¿½ndirin**
    ```bash
    git clone [repository-url]
    cd FlappyBird
    ```
 
-2. **Visual Studio'da Açýn**
-   - `FlappyBird.sln` dosyasýný çift týklayýn
+2. **Visual Studio'da Aï¿½ï¿½n**
+   - `FlappyBird.sln` dosyasï¿½nï¿½ ï¿½ift tï¿½klayï¿½n
    - Veya Visual Studio > File > Open > Project/Solution
 
-3. **Build ve Çalýþtýrýn**
-   - `Ctrl + F5` ile derleyin ve çalýþtýrýn
+3. **Build ve ï¿½alï¿½ï¿½tï¿½rï¿½n**
+   - `Ctrl + F5` ile derleyin ve ï¿½alï¿½ï¿½tï¿½rï¿½n
    - Veya Build > Build Solution > Debug > Start Without Debugging
 
-## ?? Oynanýþ
+## ?? Oynanï¿½ï¿½
 
 ### Kontroller
-| Tuþ/Aksiyon | Fonksiyon |
+| Tuï¿½/Aksiyon | Fonksiyon |
 |-------------|-----------|
-| **SPACE** | Kuþu zýplatýr / Oyunu yeniden baþlatýr |
-| **Mouse Click** | Kuþu zýplatýr / Oyunu yeniden baþlatýr |
+| **SPACE** | Kuï¿½u zï¿½platï¿½r / Oyunu yeniden baï¿½latï¿½r |
+| **Mouse Click** | Kuï¿½u zï¿½platï¿½r / Oyunu yeniden baï¿½latï¿½r |
 
-### Oyun Kurallarý
-1. **Amaç**: Kuþu borularýn arasýndan geçirerek en yüksek skoru elde edin
-2. **Hareket**: Kuþ sürekli düþer, SPACE ile yukarý zýplar
-3. **Engeller**: Üst ve alt borulara çarpmayýn
-4. **Sýnýrlar**: Ekranýn üst ve alt sýnýrlarýna çarpmayýn
-5. **Skor**: Her boru çiftini geçtiðinizde +1 puan
-6. **Zorluk**: Her 15 puanda oyun hýzý artar
+### Oyun Kurallarï¿½
+1. **Amaï¿½**: Kuï¿½u borularï¿½n arasï¿½ndan geï¿½irerek en yï¿½ksek skoru elde edin
+2. **Hareket**: Kuï¿½ sï¿½rekli dï¿½ï¿½er, SPACE ile yukarï¿½ zï¿½plar
+3. **Engeller**: ï¿½st ve alt borulara ï¿½arpmayï¿½n
+4. **Sï¿½nï¿½rlar**: Ekranï¿½n ï¿½st ve alt sï¿½nï¿½rlarï¿½na ï¿½arpmayï¿½n
+5. **Skor**: Her boru ï¿½iftini geï¿½tiï¿½inizde +1 puan
+6. **Zorluk**: Her 15 puanda oyun hï¿½zï¿½ artar
 
-### Oyun Mekaniði Detaylarý
-- **Baþlangýç Gravity**: 4 (yumuþak düþüþ)
+### Oyun Mekaniï¿½i Detaylarï¿½
+- **Baï¿½langï¿½ï¿½ Gravity**: 4 (yumuï¿½ak dï¿½ï¿½ï¿½ï¿½)
 - **Maksimum Gravity**: 10
-- **Zýplama Kuvveti**: -10 (yukarý doðru)
-- **Boru Hýzý**: 4'ten 7'ye kadar artar
-- **Boru Aralýðý**: 220 pixel (geçilebilir)
-- **Çarpýþma Efekti**: 0.6 saniye titreme ve renk deðiþimi
+- **Zï¿½plama Kuvveti**: -10 (yukarï¿½ doï¿½ru)
+- **Boru Hï¿½zï¿½**: 4'ten 7'ye kadar artar
+- **Boru Aralï¿½ï¿½ï¿½**: 220 pixel (geï¿½ilebilir)
+- **ï¿½arpï¿½ï¿½ma Efekti**: 0.6 saniye titreme ve renk deï¿½iï¿½imi
 
-## ?? Proje Yapýsý
+## ?? Proje Yapï¿½sï¿½
 
 ```
 FlappyBird/
 ??? ?? Form1.cs                 # Ana oyun logic'i
-??? ?? Form1.Designer.cs        # UI tasarým kodu
-??? ?? Form1.resx              # Form kaynaklarý
-??? ?? Program.cs               # Uygulama giriþ noktasý
+??? ?? Form1.Designer.cs        # UI tasarï¿½m kodu
+??? ?? Form1.resx              # Form kaynaklarï¿½
+??? ?? Program.cs               # Uygulama giriï¿½ noktasï¿½
 ??? ?? Properties/
 ?   ??? ?? AssemblyInfo.cs      # Assembly bilgileri
-?   ??? ?? Resources.Designer.cs # Kaynak dosyasý yönetimi
-?   ??? ?? Resources.resx       # Kaynak tanýmlarý
-?   ??? ?? Settings.Designer.cs # Uygulama ayarlarý
-??? ?? Resources/               # Oyun varlýklarý
-?   ??? ??? Flappy_Bird_1.png    # Kuþ sprite 1
-?   ??? ??? Flappy_Bird_2.png    # Kuþ sprite 2
-?   ??? ??? PipeHead.png         # Boru baþý
-?   ??? ??? PipeBody.png         # Boru gövdesi
+?   ??? ?? Resources.Designer.cs # Kaynak dosyasï¿½ yï¿½netimi
+?   ??? ?? Resources.resx       # Kaynak tanï¿½mlarï¿½
+?   ??? ?? Settings.Designer.cs # Uygulama ayarlarï¿½
+??? ?? Resources/               # Oyun varlï¿½klarï¿½
+?   ??? ??? Flappy_Bird_1.png    # Kuï¿½ sprite 1
+?   ??? ??? Flappy_Bird_2.png    # Kuï¿½ sprite 2
+?   ??? ??? PipeHead.png         # Boru baï¿½ï¿½
+?   ??? ??? PipeBody.png         # Boru gï¿½vdesi
 ??? ?? README.md               # Bu dosya
 ```
 
-## ?? Geliþtirme Süreci
+## ?? Geliï¿½tirme Sï¿½reci
 
-### Faz 1: Temel Oyun Mekaniði
-- [x] Kuþ hareketi ve gravity sistemi
-- [x] Temel zýplama mekaniði
-- [x] Kuþ animasyonu (kanat çýrpma)
+### Faz 1: Temel Oyun Mekaniï¿½i
+- [x] Kuï¿½ hareketi ve gravity sistemi
+- [x] Temel zï¿½plama mekaniï¿½i
+- [x] Kuï¿½ animasyonu (kanat ï¿½ï¿½rpma)
 
 ### Faz 2: Boru Sistemi
-- [x] Dinamik boru oluþturma
-- [x] Boru hareketi ve yeniden konumlandýrma
-- [x] Çarpýþma kontrolü
+- [x] Dinamik boru oluï¿½turma
+- [x] Boru hareketi ve yeniden konumlandï¿½rma
+- [x] ï¿½arpï¿½ï¿½ma kontrolï¿½
 
-### Faz 3: Oyun Mekaniði
+### Faz 3: Oyun Mekaniï¿½i
 - [x] Skor sistemi
 - [x] Game over logic'i
-- [x] Yeniden baþlatma
+- [x] Yeniden baï¿½latma
 
-### Faz 4: Ýyileþtirmeler
-- [x] Türkçe dil desteði
-- [x] Oynanýþ kolaylaþtýrmalarý
-- [x] Çoklu boru sistemi
+### Faz 4: ï¿½yileï¿½tirmeler
+- [x] Tï¿½rkï¿½e dil desteï¿½i
+- [x] Oynanï¿½ï¿½ kolaylaï¿½tï¿½rmalarï¿½
+- [x] ï¿½oklu boru sistemi
 - [x] Sabit pencere boyutu
 
-### Faz 5: Görsel Efektler
-- [x] Çarpýþma efektleri
+### Faz 5: Gï¿½rsel Efektler
+- [x] ï¿½arpï¿½ï¿½ma efektleri
 - [x] Ses efektleri
 - [x] Titreme animasyonu
-- [x] Renk deðiþimi efektleri
+- [x] Renk deï¿½iï¿½imi efektleri
 
 ## ?? Teknik Detaylar
 
-### Ana Sýnýflar ve Fonksiyonlar
+### Ana Sï¿½nï¿½flar ve Fonksiyonlar
 
-#### Form1.cs - Ana Oyun Sýnýfý
+#### Form1.cs - Ana Oyun Sï¿½nï¿½fï¿½
 ```csharp
 public partial class Form1 : Form
 {
-    // Temel oyun deðiþkenleri
-    int pipeSpeed = 4;           // Boru hareket hýzý
+    // Temel oyun deï¿½iï¿½kenleri
+    int pipeSpeed = 4;           // Boru hareket hï¿½zï¿½
     int gravity = 6;             // Gravity kuvveti
     int score = 0;               // Oyuncu skoru
     bool gameOver = false;       // Oyun durumu
     List<PictureBox> pipes;      // Dinamik boru listesi
     
-    // Çarpýþma efekti deðiþkenleri
+    // ï¿½arpï¿½ï¿½ma efekti deï¿½iï¿½kenleri
     bool crashEffect = false;     // Efekt durumu
-    int crashEffectTimer = 0;     // Efekt zamanlayýcýsý
+    int crashEffectTimer = 0;     // Efekt zamanlayï¿½cï¿½sï¿½
 }
 ```
 
 #### Kritik Fonksiyonlar
-- **`setupPipes()`**: Dinamik boru sistemini baþlatýr
-- **`resetGame()`**: Oyunu sýfýrlar ve yeniden baþlatýr
-- **`jump()`**: Kuþun zýplama mekaniði
-- **`gameTimer_Tick()`**: Ana oyun döngüsü (60 FPS)
-- **`startCrashEffect()`**: Çarpýþma efektini baþlatýr
-- **`finalizeGameOver()`**: Oyun bitiþini tamamlar
+- **`setupPipes()`**: Dinamik boru sistemini baï¿½latï¿½r
+- **`resetGame()`**: Oyunu sï¿½fï¿½rlar ve yeniden baï¿½latï¿½r
+- **`jump()`**: Kuï¿½un zï¿½plama mekaniï¿½i
+- **`gameTimer_Tick()`**: Ana oyun dï¿½ngï¿½sï¿½ (60 FPS)
+- **`startCrashEffect()`**: ï¿½arpï¿½ï¿½ma efektini baï¿½latï¿½r
+- **`finalizeGameOver()`**: Oyun bitiï¿½ini tamamlar
 
-### Algoritma Detaylarý
+### Algoritma Detaylarï¿½
 
-#### Çarpýþma Kontrolü
+#### ï¿½arpï¿½ï¿½ma Kontrolï¿½
 ```csharp
 Rectangle birdRect = new Rectangle(
     FlappyBirdpictureBox1.Left + 5, 
@@ -200,104 +200,104 @@ Rectangle birdRect = new Rectangle(
     FlappyBirdpictureBox1.Height - 10
 );
 ```
-- 10 pixel tolerans ile daha adil çarpýþma
-- Rectangle intersection kullanýmý
+- 10 pixel tolerans ile daha adil ï¿½arpï¿½ï¿½ma
+- Rectangle intersection kullanï¿½mï¿½
 
 #### Boru Pozisyonlama
 ```csharp
-int minHeight = 180; // Minimum geçiþ yüksekliði
-int maxHeight = 350; // Maksimum geçiþ yüksekliði
+int minHeight = 180; // Minimum geï¿½iï¿½ yï¿½ksekliï¿½i
+int maxHeight = 350; // Maksimum geï¿½iï¿½ yï¿½ksekliï¿½i
 int pipeHeight = rand.Next(minHeight, maxHeight);
 ```
-- Garantili geçilebilir aralýklar
-- 220 pixel geçiþ boþluðu
+- Garantili geï¿½ilebilir aralï¿½klar
+- 220 pixel geï¿½iï¿½ boï¿½luï¿½u
 
-### Performance Optimizasyonlarý
-- **Timer Intervals**: 20ms ana döngü, 200ms animasyon
-- **Memory Management**: Dinamik liste kullanýmý
+### Performance Optimizasyonlarï¿½
+- **Timer Intervals**: 20ms ana dï¿½ngï¿½, 200ms animasyon
+- **Memory Management**: Dinamik liste kullanï¿½mï¿½
 - **Efficient Collision**: Rectangle intersection
-- **Resource Management**: Shared PictureBox kullanýmý
+- **Resource Management**: Shared PictureBox kullanï¿½mï¿½
 
-## ?? Kullanýlan Varlýklar
+## ?? Kullanï¿½lan Varlï¿½klar
 
-### Görsel Varlýklar
-- **Flappy_Bird_1.png**: Kuþ sprite (kanat yukarý)
-- **Flappy_Bird_2.png**: Kuþ sprite (kanat aþaðý)
-- **PipeHead.png**: Boru baþý (üst ve alt için)
-- **PipeBody.png**: Boru gövdesi (kullanýma hazýr)
+### Gï¿½rsel Varlï¿½klar
+- **Flappy_Bird_1.png**: Kuï¿½ sprite (kanat yukarï¿½)
+- **Flappy_Bird_2.png**: Kuï¿½ sprite (kanat aï¿½aï¿½ï¿½)
+- **PipeHead.png**: Boru baï¿½ï¿½ (ï¿½st ve alt iï¿½in)
+- **PipeBody.png**: Boru gï¿½vdesi (kullanï¿½ma hazï¿½r)
 
 ### Ses Efektleri
-- **System.Media.SystemSounds.Hand**: Çarpýþma sesi
-- Platform native ses kullanýmý
+- **System.Media.SystemSounds.Hand**: ï¿½arpï¿½ï¿½ma sesi
+- Platform native ses kullanï¿½mï¿½
 
 ### Renkler ve Tema
 - **Arka Plan**: Sky Blue (`RGB(153, 217, 234)`)
 - **Zemin**: Saddle Brown
-- **UI Text**: Beyaz ve Sarý
-- **Çarpýþma Efekti**: Kýrmýzý yanýp sönme
+- **UI Text**: Beyaz ve Sarï¿½
+- **ï¿½arpï¿½ï¿½ma Efekti**: Kï¿½rmï¿½zï¿½ yanï¿½p sï¿½nme
 
-## ?? Gelecek Geliþtirmeler
+## ?? Gelecek Geliï¿½tirmeler
 
-### Planlanan Özellikler
+### Planlanan ï¿½zellikler
 - [ ] High Score kaydetme sistemi
-- [ ] Farklý kuþ karakterleri
-- [ ] Ek ses efektleri ve müzik
+- [ ] Farklï¿½ kuï¿½ karakterleri
+- [ ] Ek ses efektleri ve mï¿½zik
 - [ ] Power-up'lar ve bonuslar
-- [ ] Farklý zorluk seviyeleri
+- [ ] Farklï¿½ zorluk seviyeleri
 - [ ] Achievement sistemi
 
-### Teknik Ýyileþtirmeler
-- [ ] Settings dosyasý ile özelleþtirme
+### Teknik ï¿½yileï¿½tirmeler
+- [ ] Settings dosyasï¿½ ile ï¿½zelleï¿½tirme
 - [ ] Database entegrasyonu
 - [ ] Network leaderboard
 - [ ] Better graphics ve animasyonlar
 
-## ?? Katkýda Bulunma
+## ?? Katkï¿½da Bulunma
 
-### Geliþtirme Ortamý Kurulumu
-1. Visual Studio 2019+ yükleyin
-2. .NET Framework 4.7.2 SDK'sýný kurun
+### Geliï¿½tirme Ortamï¿½ Kurulumu
+1. Visual Studio 2019+ yï¿½kleyin
+2. .NET Framework 4.7.2 SDK'sï¿½nï¿½ kurun
 3. Projeyi clone edin
 4. Dependencies'leri restore edin
 
-### Katký Yönergeleri
+### Katkï¿½ Yï¿½nergeleri
 1. Fork edin
-2. Feature branch oluþturun (`git checkout -b feature/AmazingFeature`)
-3. Deðiþikliklerinizi commit edin (`git commit -m 'Add some AmazingFeature'`)
+2. Feature branch oluï¿½turun (`git checkout -b feature/AmazingFeature`)
+3. Deï¿½iï¿½ikliklerinizi commit edin (`git commit -m 'Add some AmazingFeature'`)
 4. Branch'e push edin (`git push origin feature/AmazingFeature`)
-5. Pull Request oluþturun
+5. Pull Request oluï¿½turun
 
-## ?? Proje Ýstatistikleri
+## ?? Proje ï¿½statistikleri
 
-- **Toplam Kod Satýrý**: ~400 satýr C#
-- **Sýnýf Sayýsý**: 1 ana sýnýf (Form1)
-- **Method Sayýsý**: 12 ana method
-- **Varlýk Sayýsý**: 4 görsel varlýk
-- **Geliþtirme Süresi**: ~8 iterasyon
+- **Toplam Kod Satï¿½rï¿½**: ~400 satï¿½r C#
+- **Sï¿½nï¿½f Sayï¿½sï¿½**: 1 ana sï¿½nï¿½f (Form1)
+- **Method Sayï¿½sï¿½**: 12 ana method
+- **Varlï¿½k Sayï¿½sï¿½**: 4 gï¿½rsel varlï¿½k
+- **Geliï¿½tirme Sï¿½resi**: ~8 iterasyon
 - **Platform**: Windows (.NET Framework)
 
 ## ?? Lisans
 
-Bu proje eðitim amaçlý geliþtirilmiþtir. Ticari olmayan kullaným için serbesttir.
+Bu proje eï¿½itim amaï¿½lï¿½ geliï¿½tirilmiï¿½tir. Ticari olmayan kullanï¿½m iï¿½in serbesttir.
 
-## ????? Geliþtirici Notlarý
+## ????? Geliï¿½tirici Notlarï¿½
 
-### Öðrenilen Konular
-- Windows Forms ile oyun geliþtirme
-- Timer tabanlý game loop
-- Collision detection algoritmalarý
+### ï¿½ï¿½renilen Konular
+- Windows Forms ile oyun geliï¿½tirme
+- Timer tabanlï¿½ game loop
+- Collision detection algoritmalarï¿½
 - Resource management
 - Event-driven programming
 - UI/UX design prensipleri
 
-### Karþýlaþýlan Zorluklar ve Çözümler
-1. **Çarpýþma Toleransý**: Hitbox küçültme ile çözüldü
-2. **Boru Spawn Logic**: Min/Max sýnýrlar ile kontrol edildi
+### Karï¿½ï¿½laï¿½ï¿½lan Zorluklar ve ï¿½ï¿½zï¿½mler
+1. **ï¿½arpï¿½ï¿½ma Toleransï¿½**: Hitbox kï¿½ï¿½ï¿½ltme ile ï¿½ï¿½zï¿½ldï¿½
+2. **Boru Spawn Logic**: Min/Max sï¿½nï¿½rlar ile kontrol edildi
 3. **Performance**: Timer interval optimizasyonu
-4. **Çarpýþma Efektleri**: State management ile yönetildi
+4. **ï¿½arpï¿½ï¿½ma Efektleri**: State management ile yï¿½netildi
 
 ---
 
-?? **Ýyi Oyunlar!** ??
+?? **ï¿½yi Oyunlar!** ??
 
-*Bu oyun, klasik Flappy Bird deneyimini modern C# teknolojileri ile yeniden yaratma amacýyla geliþtirilmiþtir.*
+*Bu oyun, klasik Flappy Bird deneyimini modern C# teknolojileri ile yeniden yaratma amacï¿½yla geliï¿½tirilmiï¿½tir.*
