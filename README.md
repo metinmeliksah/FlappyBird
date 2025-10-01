@@ -1,37 +1,39 @@
 # Flappy Bird - C# Windows Forms Oyunu
 
-Bu proje, klasik Flappy Bird oyununun C# Windows Forms kullanılarak geliştirilmiş tam özellikli bir versiyonudur. Oyun, orijinal Flappy Bird deneyimini korurken, ek özellikler ve Türkçe dil desteği ile geliştirilmiştir.
+Bu proje, klasik Flappy Bird oyununun C# Windows Forms kullanılarak geliştirilmiş tam özellikli bir sürümüdür. Orijinal deneyimi korurken ek özellikler ve Türkçe dil desteği sunar.
 
 ## İçindekiler
- - [Özellikler](#özellikler)
- - [Teknolojiler](#teknolojiler)
- - [Kurulum](#kurulum)
- - [Oynanış](#oynanış)
- - [Proje Yapısı](#proje-yapısı)
- - [Geliştirme Süreci](#geliştirme-süreci)
- - [Teknik Detaylar](#teknik-detaylar)
- - [Katkıda Bulunma](#katkıda-bulunma)
+- [Özellikler](#özellikler)
+- [Teknolojiler](#teknolojiler)
+- [Kurulum](#kurulum)
+- [Oynanış](#oynanış)
+- [Proje Yapısı](#proje-yapısı)
+- [Geliştirme Süreci](#geliştirme-süreci)
+- [Teknik Detaylar](#teknik-detaylar)
+- [Katkıda Bulunma](#katkıda-bulunma)
+- [Proje İstatistikleri](#proje-İstatistikleri)
+- [Lisans](#lisans)
 
 ## Özellikler
 
 ### Oyun Mekaniği
-- **Fizik Tabanlı Hareket**: Gerçekçi gravity ve zıplama mekaniği
-- **Yumuşak Kontroller**: Responsive ve kullanıcı dostu kontrol sistemi
-- **Çoklu Boru Sistemi**: Dinamik olarak oluşturulan 3 çift boru
-- **Akıllı Zorluk**: Skor arttıkça artan oyun hızı
-- **Çarpışma Efektleri**: Görsel ve işitsel feedback sistemi
+- Fizik tabanlı hareket: gerçekçi yerçekimi ve zıplama
+- Yumuşak ve duyarlı kontroller
+- Dinamik oluşturulan çoklu boru sistemi (3 çift)
+- Artan zorluk: skor yükseldikçe hız artışı
+- Çarpışma efektleri: görsel ve işitsel geri bildirim
 
 ### Görsel Özellikler
-- **Kuş Animasyonu**: Kanat çırpma animasyonu
-- **Çarpışma Efektleri**: Titreme ve renk değişimi
-- **Temiz UI**: Modern ve anlaşılır kullanıcı arayüzü
-- **Türkçe Dil Desteği**: Tam Türkçe oyun metinleri
+- Kuş kanat çırpma animasyonu
+- Çarpışma sonrası titreme ve renk değişimi
+- Temiz ve anlaşılır kullanıcı arayüzü (UI)
+- Tam Türkçe oyun metinleri
 
 ### Teknik Özellikler
-- **Sabit Pencere Boyutu**: Yeniden boyutlandırma koruması
-- **Optimized Performance**: 20ms timer ile akıcı oynanış
-- **Memory Efficient**: Dinamik nesne yönetimi
-- **Exception Handling**: Hata korumalı ses sistemi
+- Sabit pencere boyutu (yeniden boyutlandırma korumalı)
+- 20ms timer ile akıcı oyun döngüsü
+- Dinamik nesne yönetimi (bellek verimliliği)
+- Hata korumalı ses sistemi
 
 ## Teknolojiler
 
